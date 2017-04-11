@@ -172,7 +172,7 @@
 
         <div class="form-group">
             <label for="field_usuario">Usuario</label>
-            <select class="form-control" id="field_usuario" name="usuario" ng-model="vm.peticion.usuario" ng-options="usuario as usuario.id for usuario in vm.usuarios track by usuario.id" required>
+            <select class="form-control" id="field_usuario" name="usuario" ng-model="vm.peticion.usuario" ng-options="usuario as usuario.nombre for usuario in vm.usuarios track by usuario.nombre" required>
                 <option value=""></option>
             </select>
         </div>
@@ -184,7 +184,7 @@
         </div>
         <div class="form-group">
             <label for="field_peticionario">Peticionario</label>
-            <select class="form-control" id="field_peticionario" name="peticionario" ng-model="vm.peticion.peticionario" ng-options="peticionario as peticionario.id for peticionario in vm.peticionarios track by peticionario.id" required>
+            <select class="form-control" id="field_peticionario" name="peticionario" ng-model="vm.peticion.peticionario" ng-options="peticionario as peticionario.tipo for peticionario in vm.peticionarios track by peticionario.tipo" required>
                 <option value=""></option>
             </select>
         </div>
